@@ -20,15 +20,15 @@ export const HumidityComponents = () => {
                 <div className='value'>{Math.round(current.uvi)} ({uvLevel(Math.round(current.uvi))})</div>
             </div>
             <div className='humidityData'>
-                <div className='title'>HUMIDITY </div>
+                <div className='title'>Humidity </div>
                 <div className='value'>{current.humidity} %</div>
             </div>
             <div className='humidityData'>
-                <div className='title'>WIND </div>
+                <div className='title'>Wind </div>
                 <div className='value'>{Math.round(current.wind_speed)} km/h</div>
             </div>
             <div className='humidityData'>
-                <div className='title'>{city.city} - Population</div>
+                <div className='title'>Population</div>
                 <div className='value'>{parseFloat(city.population).toLocaleString('en')}</div>
             </div>
         </div>: ''
